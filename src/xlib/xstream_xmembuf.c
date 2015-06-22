@@ -1,11 +1,10 @@
-#include <stdio.h>
 #include <errno.h>
+#include <stdio.h>
 #include <string.h>
 
 #include <xlib/xtypes.h>
 #include <xlib/xstream.h>
 #include <xlib/xmembuf.h>
-
 
 static int
 xstream_xmembuf_open_fn(xstream_t *xs, const char *mode, void *userdata)

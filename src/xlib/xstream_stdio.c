@@ -2,8 +2,8 @@
 #include "config.h"
 #endif /* HAVE_CONFIG_H */
 
-#include <stdio.h>
 #include <errno.h>
+#include <stdio.h>
 
 #ifdef HAVE_UNISTD_H
 #include <unistd.h>

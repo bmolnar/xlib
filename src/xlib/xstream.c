@@ -1,8 +1,8 @@
-#include <stdint.h>
-#include <string.h>
-#include <stdarg.h>
-#include <stdlib.h>
 #include <errno.h>
+#include <stdarg.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
 
 #include <xlib/xerr.h>
 #include <xlib/xstream.h>

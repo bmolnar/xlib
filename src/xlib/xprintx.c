@@ -1,8 +1,9 @@
+#include <errno.h>
+#include <limits.h>
+#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdint.h>
-#include <limits.h>
-#include <errno.h>
+#include <string.h>
 
 #include <xlib/xerr.h>
 #include <xlib/xstream.h>
