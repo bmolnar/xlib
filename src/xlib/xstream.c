@@ -10,41 +10,52 @@
 static int
 xstream_do_open(xstream_t *xs, const char *mode, void *userdata)
 {
-    if (xs->xs_ops.open == NULL)
+    xstream_ops_t *ops = XSTREAM_OPS(xs);
+    if (ops->op_open == NULL)
+    {
         return -XERR_NOSYS;
-    return (*xs->xs_ops.open)(xs, mode, userdata);
+    }
+    return (*ops->op_open)(xs, mode, userdata);
 }
-
 static int
 xstream_do_close(xstream_t *xs)
 {
-    if (xs->xs_ops.close == NULL)
+    xstream_ops_t *ops = XSTREAM_OPS(xs);
+    if (ops->op_close == NULL)
+    {
         return -XERR_NOSYS;
-    return (*xs->xs_ops.close)(xs);
+    }
+    return (*ops->op_close)(xs);
 }
-
 static ssize_t
 xstream_do_write(xstream_t *xs, const void *buf, size_t sz)
 {
-    if (xs->xs_ops.write == NULL)
+    xstream_ops_t *ops = XSTREAM_OPS(xs);
+    if (ops->op_write == NULL)
+    {
         return -XERR_NOSYS;
-    return (*xs->xs_ops.write)(xs, buf, sz);
+    }
+    return (*ops->op_write)(xs, buf, sz);
 }
-
 static ssize_t
 xstream_do_read(xstream_t *xs, void *buf, size_t sz)
 {
-    if (xs->xs_ops.read == NULL)
+    xstream_ops_t *ops = XSTREAM_OPS(xs);
+    if (ops->op_read == NULL)
+    {
         return -XERR_NOSYS;
-    return (*xs->xs_ops.read)(xs, buf, sz);
+    }
+    return (*ops->op_read)(xs, buf, sz);
 }
-
 static int
 xstream_do_flush(xstream_t *xs)
 {
-    if (xs->xs_ops.flush == NULL)
+    xstream_ops_t *ops = XSTREAM_OPS(xs);
+    if (ops->op_flush == NULL)
+    {
         return -XERR_NOSYS;
-    return (*xs->xs_ops.flush)(xs);
+    }
+    return (*ops->op_flush)(xs);
 }
 
 
@@ -105,15 +116,16 @@ xstream_open(xstream_ops_t ops, const char *mode, void *userdata)
 
     xs = xstream_create(ops);
     if (xs == NULL)
+    {
         return xs;
-
+    }
     rv = xstream_do_open(xs, mode, userdata);
-    if (rv < 0 && rv != -XERR_NOSYS) {
+    if (rv < 0 && rv != -XERR_NOSYS)
+    {
         free(xs);
         errno = -rv;
         return NULL;
     }
-
     return xs;
 }
 

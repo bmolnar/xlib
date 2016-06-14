@@ -3,9 +3,13 @@
 
 #include <stdint.h>
 
+__XLIB_BEGIN_DECL
+
 struct xiovec {
     void * iov_base;
     size_t iov_len;
 };
+
+__XLIB_END_DECL
 
 #endif /* _XIOVEC_H */

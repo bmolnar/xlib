@@ -1,7 +1,7 @@
 #include <xlib/xerr.h>
 
 const char *
-xerr_str(int xerr)
+xerr_str(xerr_t xerr)
 {
     switch (xerr) {
     case XERR_NOSYS:

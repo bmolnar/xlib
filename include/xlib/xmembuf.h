@@ -5,6 +5,8 @@
 
 #include <xlib/xtypes.h>
 
+__XLIB_BEGIN_DECL
+
 struct xmembuf {
     void * mb_buf;
     size_t mb_capacity;
@@ -29,5 +31,7 @@ ssize_t xmembuf_memptrs(struct xmembuf *mbuf, struct iovec *iov, size_t iovcnt);
 ssize_t xmembuf_putxmembuf(struct xmembuf *mbuf, struct xmembuf *src);
 ssize_t xmembuf_putbytes(struct xmembuf *mbuf, const unsigned char *buf, size_t count);
 ssize_t xmembuf_getbytes(struct xmembuf *mbuf, unsigned char *buf, size_t count);
+
+__XLIB_END_DECL
 
 #endif /* _XMEMBUF_H */
