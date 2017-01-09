@@ -1,5 +1,5 @@
-#ifndef _XSTREAM_XMEMBUF_H
-#define _XSTREAM_XMEMBUF_H
+#ifndef _XLIB_XSTREAM_XMEMBUF_H
+#define _XLIB_XSTREAM_XMEMBUF_H
 
 #include <xlib/xdefs.h>
 #include <xlib/xstream.h>
@@ -11,4 +11,4 @@ xstream_t *xstream_xmembuf_open(const char *mode, struct xmembuf *mbuf);
 
 __XLIB_END_DECL
 
-#endif /* _XSTREAM_XMEMBUF_H */
+#endif /* _XLIB_XSTREAM_XMEMBUF_H */

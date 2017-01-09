@@ -1,5 +1,5 @@
-#ifndef _XSTREAM_H
-#define _XSTREAM_H
+#ifndef _XLIB_XSTREAM_H
+#define _XLIB_XSTREAM_H
 
 #include <stdarg.h>
 
@@ -42,4 +42,4 @@ int xstream_flush(xstream_t *xs);
 
 __XLIB_END_DECL
 
-#endif /* _STREAM_H */
+#endif /* _XLIB_STREAM_H */

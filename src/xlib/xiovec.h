@@ -1,5 +1,5 @@
-#ifndef _XIOVEC_H
-#define _XIOVEC_H
+#ifndef _XLIB_XIOVEC_H
+#define _XLIB_XIOVEC_H
 
 #include <stdint.h>
 
@@ -12,4 +12,4 @@ struct xiovec {
 
 __XLIB_END_DECL
 
-#endif /* _XIOVEC_H */
+#endif /* _XLIB_XIOVEC_H */

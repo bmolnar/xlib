@@ -1,5 +1,5 @@
-#ifndef _XALLOC_H
-#define _XALLOC_H
+#ifndef _XLIB_XALLOC_H
+#define _XLIB_XALLOC_H
 
 #include <stdarg.h>
 
@@ -30,4 +30,4 @@ void xalloc_free(xalloc_t *xa, void *ptr);
 
 __XLIB_END_DECL
 
-#endif /* _XALLOC_H */
+#endif /* _XLIB_XALLOC_H */

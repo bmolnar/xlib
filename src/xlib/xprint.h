@@ -1,5 +1,5 @@
-#ifndef _XPRINT_H
-#define _XPRINT_H
+#ifndef _XLIB_XPRINT_H
+#define _XLIB_XPRINT_H
 
 #include <stdarg.h>
 
@@ -41,4 +41,4 @@ int xsprintf(xstream_t *xs, const char *format, ...);
 
 __XLIB_END_DECL
 
-#endif /* _XPRINT_H */
+#endif /* _XLIB_XPRINT_H */

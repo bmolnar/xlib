@@ -1,5 +1,5 @@
-#ifndef _XPRINT_WRAPPERS_H
-#define _XPRINT_WRAPPERS_H
+#ifndef _XLIB_XPRINT_WRAPPERS_H
+#define _XLIB_XPRINT_WRAPPERS_H
 
 #include <stdarg.h>
 
@@ -17,4 +17,4 @@ extern xprint_ops_t _wrap_stdio_xpops;
 
 __XLIB_END_DECL
 
-#endif /* _XPRINT_WRAPPERS_H */
+#endif /* _XLIB_XPRINT_WRAPPERS_H */

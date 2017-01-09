@@ -1,5 +1,5 @@
-#ifndef _XTYPES_H
-#define _XTYPES_H
+#ifndef _XLIB_XTYPES_H
+#define _XLIB_XTYPES_H
 
 #include <xlib/xdefs.h>
 #include <xlib/xconfig.h>
@@ -23,4 +23,4 @@ struct iovec {
 
 __XLIB_END_DECL
 
-#endif /* _XTYPES_H */
+#endif /* _XLIB_XTYPES_H */

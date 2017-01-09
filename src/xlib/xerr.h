@@ -1,5 +1,5 @@
-#ifndef _XERR_H
-#define _XERR_H
+#ifndef _XLIB_XERR_H
+#define _XLIB_XERR_H
 
 #include <stdint.h>
 
@@ -35,4 +35,4 @@ const char *xerr_str(xerr_t xerr);
 
 __XLIB_END_DECL
 
-#endif /* _XERR_H */
+#endif /* _XLIB_XERR_H */

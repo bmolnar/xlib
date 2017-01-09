@@ -1,5 +1,5 @@
-#ifndef _XFMT_H
-#define _XFMT_H
+#ifndef _XLIB_XFMT_H
+#define _XLIB_XFMT_H
 
 #include <stdint.h>
 #include <stdarg.h>
@@ -265,4 +265,4 @@ int xfmt_parse(xfmt_handler_t *xp, const char *format, ...);
 
 __XLIB_END_DECL
 
-#endif /* _XFMT_H */
+#endif /* _XLIB_XFMT_H */

@@ -1,5 +1,5 @@
-#ifndef _XMEMBUF_H
-#define _XMEMBUF_H
+#ifndef _XLIB_XMEMBUF_H
+#define _XLIB_XMEMBUF_H
 
 #include <stdlib.h>
 
@@ -34,4 +34,4 @@ ssize_t xmembuf_getbytes(struct xmembuf *mbuf, unsigned char *buf, size_t count)
 
 __XLIB_END_DECL
 
-#endif /* _XMEMBUF_H */
+#endif /* _XLIB_XMEMBUF_H */

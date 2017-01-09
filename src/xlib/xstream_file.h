@@ -1,5 +1,5 @@
-#ifndef _XSTREAM_FILE_H
-#define _XSTREAM_FILE_H
+#ifndef _XLIB_XSTREAM_FILE_H
+#define _XLIB_XSTREAM_FILE_H
 
 #include <xlib/xdefs.h>
 #include <xlib/xstream.h>
@@ -10,4 +10,4 @@ xstream_t *xstream_file_open(const char *path, const char *mode);
 
 __XLIB_END_DECL
 
-#endif /* _XSTREAM_FILE_H */
+#endif /* _XLIB_XSTREAM_FILE_H */
