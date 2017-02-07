@@ -1,5 +1,5 @@
 AC_PREREQ([2.57])
-AC_INIT([xlib], [1.0.0], [brian.molnar@gmail.com])
+AC_INIT([xlib], [1.0.0], [brian.molnar(at)gmail(dot)com])
 
 AC_CONFIG_AUX_DIR([config-aux])
 AC_CONFIG_MACRO_DIR([m4])
